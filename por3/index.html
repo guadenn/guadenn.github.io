@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilo.css">
+    <title>LP desarrollo web</title>
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/GB/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <li><button id="bdark"> Modo oscuro </button></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+                    <!---iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.youtube.com/channel/UCUxav2NclFnSkpPwMpe7rPA"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/guadalupe.bosio"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/guadenn"><i class="fa-brands fa-square-instagram"></i></i></a>
+                    </div>
+                </div>
+        
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Guada</span>, Analista Ambiental</h2>
+                <p class="descripcion">Este es mi proyecto integrador o final. Espero que les guste y no duden(mucho) en aprobarme</p>
+                <a href="#portfolio">Ir a Portfolio</a>
+
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto pez.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Guada</span></h2>
+            <h3>Lic. en Gestion Ambiental</h3>
+            <p>Me gusta mucho programar y mi objetivo es poder usar la tecnologia a favor del ambiente que nos rodea</p>
+            <p>Estoy entusiasmada aprendiendo cosas nuevas, por eso hago cursos constantemente. Si te interesa, te dejo mi cv </p>
+            <a href="CV - Guadalupe Bosio 2023.pdf"> Descargar CV</a>
+        </div>
+    </section>
+    <!---SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4> Ambiental </h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Asesoria legal</li>
+                    <li>Permisos ambientales</li>
+                    <li>Licencias</li>
+                </ul>
+                <p>Asesoria y gestion ambiental </p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4> Monitoreos </h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Calidad de agua</li>
+                    <li>Calidad de aire</li>
+                    <li>Efluentes gaseosos</li>
+                </ul>
+                <p>Analisis por laboratorios certificados </p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>  ACUMAR  </h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>DDJJ</li>
+                    <li>Remediaciones</li>
+                    <li>PGA</li>
+                </ul>
+                <p>Cuenca Matanza-Riachuelo </p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Analisis de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Dashboards</li>
+                    <li>Graficos</li>
+                    <li>Storytelling</li>
+                </ul>
+                <p>Poder visualizar los datos nos permite entender y explicarnos mejor para sacar conclusiones importantes.</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Ciencia de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>PANDAS</li>
+                    <li>PYTHON</li>
+                    <li>Machine Learning</li>
+                </ul>
+                <p>Los datos son importantes para las decisiones y nos permiten predecir a futuro con fundamentos estadisticos.</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Pagina web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Responsive</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                </ul>
+                <p>Sitios web personalizados</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso1" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso2" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Bases de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso3" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Python</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="barra-progreso4" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/foto camaleon.jpg"alt="">
+                <div class="info">
+                    <h4>Modelo de machine learning para predecir si llovera en Australia</h4>
+                    <a href="https://github.com/guadenn/weatheraus">Notebook</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/foto alguacil.jpg"alt="">
+                <div class="info">
+                    <h4>Pagina web personal</h4>
+                    <a href="https://github.com/guadenn/proyectointegrador_GuadalupeBosio">Front-End con Angular</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/foto sapo.jpg"alt="">
+                <div class="info">
+                    <h4> Modelo de machine learning para predecir la potabilidad del agua</h4>
+                    <a href="https://drive.google.com/file/d/1GWa0ZemiRzen31fz9UG9v0Sc0Yq1J9ko/view?usp=sharing">Notebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactenos ahora</h3>
+        <div class="contenedor-form">
+            <form id="form" action="https://formsubmit.co/guadabosio@gmail.com" method="POST" class="form">
+                <div class="fila mitad">
+                    <input name ="name" id = "nombre" type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input name="email" id = "email" type="text" placeholder="Direccion mail" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input name="tema" type="text"placeholder="Tema" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje.." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+            <a href="mailto:guadabosio@gmail.com" id="emailA"></a>
+        </div>
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

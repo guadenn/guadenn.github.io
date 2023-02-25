@@ -497,6 +497,14 @@ footer a {
    font-size: 26px;
 
 }
+footer p {
+   text-decoration: none;
+   color: #000;
+   display: inline-block;
+   margin: 5px;
+   font-size: 26px;
+
+}
 
 
 /* SECCION RESPONSIVE */

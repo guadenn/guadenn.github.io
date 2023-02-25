@@ -74,8 +74,12 @@ const body = document.querySelector('body');
 
 load(); 
 
+let dark = false;
+
 bdark.addEventListener('click', e =>{
     body.classList.toggle('darkmode');
+    dark = !dark;
+    bdark.textContent = dark ? 'Modo Oscuro' : 'Modo Claro';
     store(body.classList.contains('darkmode'));
 });
 

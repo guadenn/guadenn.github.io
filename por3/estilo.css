@@ -497,6 +497,12 @@ footer a {
    font-size: 26px;
 
 }
+
+footer a:hover {
+color: #ff5080;
+   
+}
+
 footer p {
    text-decoration: none;
    color: #000;
@@ -763,5 +769,26 @@ font-size: 25px;
 color:#ff5080;  
 }
 
+.darkmode footer p {
+text-decoration: none;
+color: #fff;
+display: inline-block;
+margin: 5px;
+font-size: 26px;
+
+}
+
+.darkmode footer a{
+text-decoration: none;
+color:#fff;
+display: inline-block;
+margin-left: 10px;
+transition: .5s;
+
+}
+.darkmode footer a:hover{
+color:#ff5080;
+
+}
 /*
  /*
